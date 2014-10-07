@@ -15,6 +15,9 @@ gem 'compass'
 # Slim
 gem 'slim'
 
+gem 'foreman'
+gem 'heroku'
+
 # Other templating languages
 # gem 'erubis'
 # gem 'haml'
