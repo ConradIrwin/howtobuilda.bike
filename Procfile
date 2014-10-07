@@ -1,2 +1,1 @@
-bundle exec serve -p $PORT
-
+web: bundle exec rackup -p $PORT
