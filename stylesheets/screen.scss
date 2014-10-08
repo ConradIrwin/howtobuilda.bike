@@ -1,7 +1,80 @@
 //
 // Application Stylesheet
 //
+@import "../bower_components/normalize.css/normalize.css";
 
-@import "partials/base";
-@import "partials/content";
-@import "partials/layout";
+
+html {
+  height:100%;
+  font-size: 20px;
+
+    background-color: transparent;
+    background-image: linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, transparent 98%, rgba(0,0,0,0.2) 100%);
+    background-size: 30px 30px;
+    * { background-color: rgba(0,0,0,0.1); }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/build-a-bike-chain.png");
+  background-position: calc(50% - 480px);
+  background-repeat: repeat-y;
+  padding: 1px;
+}
+
+img.sidebar {
+  float: right;
+  clear: right;
+  margin: 0 0 1.5rem 0;
+  height: 7.5rem;
+  margin-right: -12rem;
+}
+
+img.inline {
+  width: 24rem;
+  height: 18rem;
+  margin: 0 auto 1.5rem auto;
+  border: 1.5rem solid white;
+  display: block;
+}
+
+article {
+  margin: auto;
+  width: 36rem;
+  font-family: Georgia;
+  font-style: normal;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+    blockquote {
+      border: 1px solid black;
+      width: 600px;
+      font-size: 16px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Helvetica Nueue, Helvetica, Arial;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.5;
+      margin: 3rem 0 1.5rem 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin: 2rem 0 1rem 0;
+    }
+}
+
+

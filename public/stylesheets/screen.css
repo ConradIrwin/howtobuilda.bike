@@ -1,31 +1,69 @@
-/*
-NoMethodError: undefined method `empty?' for nil:NilClass
+@import url(../bower_components/normalize.css/normalize.css);
+html {
+  height: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: 30px 30px;
+}
+html * {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
-Backtrace:
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/tree/root_node.rb:23:in `render'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/engine.rb:240:in `render'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/lint.rb:48:in `_call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/lint.rb:36:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/showexceptions.rb:24:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/commonlogger.rb:20:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/chunked.rb:41:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/content_length.rb:14:in `call'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/rack-1.3.2/lib/rack/handler/webrick.rb:59:in `service'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-/Users/conrad/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "NoMethodError: undefined method `empty?' for nil:NilClass"; }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/build-a-bike-chain.png");
+  background-position: calc(50% - 480px);
+  background-repeat: repeat-y;
+  padding: 1px;
+}
+
+img.sidebar {
+  float: right;
+  clear: right;
+  margin: 0 0 1.5rem 0;
+  height: 7.5rem;
+  margin-right: -12rem;
+}
+
+img.inline {
+  width: 24rem;
+  height: 18rem;
+  margin: 0 auto 1.5rem auto;
+  border: 1.5rem solid white;
+  display: block;
+}
+
+article {
+  margin: auto;
+  width: 36rem;
+  font-family: Georgia;
+  font-style: normal;
+}
+article p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 1.5rem 0;
+}
+article blockquote {
+  border: 1px solid black;
+  width: 600px;
+  font-size: 16px;
+}
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  font-family: Helvetica Nueue, Helvetica, Arial;
+  font-weight: 300;
+}
+article h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  margin: 3rem 0 1.5rem 0;
+}
+article h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0 1rem 0;
+}
