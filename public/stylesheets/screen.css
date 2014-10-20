@@ -2,12 +2,15 @@
 html {
   height: 100%;
   font-size: 20px;
-  background-color: transparent;
-  background-image: linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%);
-  background-size: 30px 30px;
-}
-html * {
-  background-color: rgba(0, 0, 0, 0.1);
+  /*
+    background-color: transparent;
+    background-image: linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, transparent 98%, rgba(0,0,0,0.2) 100%);
+    background-size: 30px 30px;
+    blockquote {
+        background-image: linear-gradient(0deg, white 96%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, white 96%, rgba(0,0,0,0.2) 100%);
+        background-size: 20px 20px;
+    }
+    /* { background-color: rgba(0,0,0,0.1); } */
 }
 
 * {
@@ -22,15 +25,69 @@ body {
 }
 
 img.sidebar {
-  float: right;
-  clear: right;
-  margin: 0 0 1.5rem 0;
+  display: inline-block;
+  float: left;
+  width: 7.5rem;
+}
+
+table.aside {
+  position: relative;
+  width: 36rem;
+  height: 500px;
+  margin-bottom: 40px;
+}
+table.aside img.photo {
+  width: 12rem;
+}
+
+table.sum {
+  width: 36rem;
+  height: 9rem;
+}
+table.sum td {
+  width: 8rem;
+}
+table.sum img {
+  width: 8rem;
+}
+table.sum td.symbol {
+  width: 6rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+table.star {
+  width: 18rem;
+  margin: auto;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+}
+table.star img.short {
   height: 7.5rem;
-  margin-right: -12rem;
+}
+table.star img.tall {
+  height: 15rem;
+}
+
+figure {
+  margin: 0 0 1.5rem 0.75rem;
+}
+figure img {
+  margin-right: 1.5rem;
+  display: inline-block;
+  height: 7.5rem;
 }
 
 img.inline {
   width: 24rem;
+  height: 18rem;
+  margin: 0 auto 1.5rem auto;
+  border: 1.5rem solid white;
+  display: block;
+}
+
+img.meme {
+  width: 20rem;
   height: 18rem;
   margin: 0 auto 1.5rem auto;
   border: 1.5rem solid white;
@@ -49,9 +106,33 @@ article p {
   margin: 0 0 1.5rem 0;
 }
 article blockquote {
-  border: 1px solid black;
-  width: 600px;
-  font-size: 16px;
+  box-shadow: 0px 0px 0.5px 0.5px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  margin: 0 3rem 1.5rem 1.5rem;
+}
+article blockquote img.result {
+  width: 8rem;
+  float: right;
+}
+article blockquote h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  font-weight: bold;
+}
+article blockquote ul, article blockquote ol {
+  margin-bottom: 1rem;
+  line-height: 1rem;
+}
+article blockquote ul li, article blockquote ol li {
+  margin: 0;
+}
+article blockquote ul + ol {
+  margin-top: 1rem;
+}
+article blockquote > :last-child {
+  margin-bottom: 0.5rem;
 }
 article h1, article h2, article h3, article h4, article h5, article h6 {
   font-family: Helvetica Nueue, Helvetica, Arial;
