@@ -5,3 +5,14 @@ title How to build a bicycle in three weeks
 
 article
   == yield
+
+javascript:
+  var is = document.getElementsByTagName("img")
+
+  for (var x = 1; x < is.length; x++) {
+    var img = is[x];
+    img.onclick = function () {
+      window.location = this.src.replace('thumbs', 'images');
+    }
+  }
+

@@ -3,13 +3,10 @@ html {
   height: 100%;
   font-size: 20px;
   background-color: transparent;
+  /*
   background-image: linear-gradient(0deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, transparent 98%, rgba(0, 0, 0, 0.2) 100%);
   background-size: 30px 30px;
   /* { background-color: rgba(0,0,0,0.1); } */
-}
-html blockquote {
-  background-image: linear-gradient(0deg, white 96%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(90deg, white 96%, rgba(0, 0, 0, 0.2) 100%);
-  background-size: 20px 20px;
 }
 
 * {
@@ -23,11 +20,19 @@ body {
   padding: 1px;
 }
 
+img {
+  cursor: pointer;
+}
+
 img.sidebar {
   display: inline-block;
   float: left;
   width: 7.5rem;
 }
+
+img.logo {
+  width: 10.5rem;
+  }
 
 table.aside {
   position: relative;
