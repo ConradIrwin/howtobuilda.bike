@@ -23,6 +23,9 @@ body {
 img {
   cursor: pointer;
 }
+img.header {
+  cursor: default;
+}
 
 img.sidebar {
   display: inline-block;
@@ -47,6 +50,7 @@ table.aside img.photo {
 table.sum {
   width: 36rem;
   height: 9rem;
+  margin-bottom: 1.5rem;
 }
 table.sum td {
   width: 8rem;
