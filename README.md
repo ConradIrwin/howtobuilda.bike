@@ -1,3 +1,7 @@
+This is the code for [htps://howtobuilda.bike](https://howtobuilda.bike). Please feel free to correct typos or improve the writing style.
+
+To get in touch with me, use [Twitter](https://twitter.com/ConradIrwin) or Github Issues.
+
 How to contribute
 =================
 
@@ -19,5 +23,4 @@ Run foreman
 ```
 bundle exec foreman start
 ```
-
 
